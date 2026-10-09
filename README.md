@@ -1,32 +1,15 @@
 # Preference Style Guide
 
-A technical documentation website demonstrating how a
-complex set of account-specific preferences can be organized
-into a consistent and readable standard.
+A technical documentation website demonstrating an overview of the ROE Dental Laboratory
+account-specific preferences system. 
 
 ## Project Goals
 
-- Establish a consistent documentation hierarchy.
-- Improve the readability and discoverability of information.
-- Present examples of standardized formatting.
-- Provide a searchable department reference.
-- Demonstrate responsive front-end development.
-
-## Technologies
-
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- GitHub Pages
-
-## Features
-
-- Section-based documentation navigation
-- Searchable content
-- Filterable reference table
-- Copyable examples
-- Responsive layout
-- Accessible navigation and semantic markup
+- Establish a consistent documentation hierarchy
+- Improve the readability and discoverability of information
+- Create a replicable system that can be learned by anyone
+- Provide a indexable department-specific interface
+- Limit the amount of departments with preferences
 
 ## Run Locally
 
