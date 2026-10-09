@@ -39,69 +39,227 @@
         <p class="eyebrow">DOCUMENTATION / STYLE GUIDE</p>
         <h1>Preference Style Guide</h1>
         <p class="lead">
-          A consistent framework for organizing account-specific
-          requirements into clear, readable, actionable instructions.
+          This guide provides a consistent documentation & reference for how to correctly
+          format and type the preferences for Doctor's Accounts at ROE Dental Laboratory. 
         </p>
 
         <div class="callout">
-          <strong>Core principle</strong>
+          <strong>Clear Communication</strong>
           <p>
-            Every preference should be concise, correctly categorized,
-            and easy for its intended reader to locate.
+            Referencing this guide when adding, creating, or removing preference will 
+            help not only you, but everyone at ROE Dental Lab. We're counting on you to know
+            that here at ROE, our preference ie excellent service. 
           </p>
         </div>
 
         <h2>Purpose</h2>
-        <p>[Describe the purpose and scope of the standard.]</p>
+        <p>It is your duty to utilize this guide when interacting with the preference system to maintaing
+        a uniform look and readability. If this is not followed, preferences can easily become overloaded and
+        unreadable, leading to confusion and annoyance. Preferences are one of the many ways we can show the quality
+        of our work and care to our accounts here at ROE Dental Lab. </p>
 
         <h2>Goals</h2>
         <ul>
           <li>Improve consistency and readability.</li>
           <li>Reduce duplicated and contradictory instructions.</li>
           <li>Make important information easier to locate.</li>
-          <li>[Add any additional goals.]</li>
         </ul>
       </section>
 
       <section id="system-basics" class="doc-section">
         <h2>System Basics</h2>
         <h3>What are preferences?</h3>
-        <p>[Explain the role of preferences using generalized examples.]</p>
+        <p>Preferences are a set of rules and guidelines expressed by a Doctor for how we can best serve them
+        , and the products we make. Each Doctor's account has their own unique set of preferences that are printed 
+        on a work ticket whenever a new case is generated.</p>
+        <ul>
+          <li>Even if an account has multiple doctors, only one preference page will be generated.</li>
+          <li>Preferences are shared across an account for all cases.</li>
+        </ul>
         <h3>How are preferences applied?</h3>
-        <p>[Describe the confirmed behavior of the underlying system.]</p>
+        <p>Each department can be assigned a specific set of preferences. For example, 
+        if Dr. Smith wants all denture cases to include a name, you can include that preference in the
+        Denture Department Preference tab. When a denture case is scheduled, this preference will be printed.</p>
         <div class="example">
           <span class="example-label">EXAMPLE</span>
-          <pre><code>[Insert a sanitized example.]</code></pre>
+          <pre><code>Dr. Smith wants an all-acrylic partial for her patient. Most of the steps
+          will be scheduled for the Partial Splint (PARTSPLINT) Department. Though 1 step, 70010-Select Teeth, 
+          is from the Denture Department (DENTURES) so all preferences for the 
+            Denture Department will also be printed. </code></pre>
         </div>
+        <p>There are some departments whose preferences will always be include such as: </p>
+        <ul>
+          <li>Data Entry</li>
+          <li>Team QC Quality Control</li>
+          <li>General Preferences</li>
+        </ul>
+        <p>To avoid repeating information, the preference system limit the Departments that can 
+        be given preferences. </p>
       </section>
 
       <section id="formatting" class="doc-section">
         <h2>Formatting Rules</h2>
-        <h3>Section dividers</h3>
-        <p>[Document divider length, placement, and spacing.]</p>
-        <h3>Spacing and readability</h3>
-        <p>[Document line spacing and formatting constraints.]</p>
+        <h3>Limitations</h3>
+        <p>It is important to limit what can and cannot be included to keep an overall
+        uniformity to all preferences. The goal is to make is that all preferences look like 
+        they were written by the same person. This increases not only the readability, but
+        also the speed at which a technician can find important information. </p>
+        <p>Additionally, the text input of the system is limited in what it can showcase.
+        It cannot utilize things that are helping you read this very document such as colored text, 
+        varying spaces, bold/italic/underlined text, headers, lists, and bullet points. As such, 
+        it is important to follow these guidelines that have been crafted specifically to work within these
+        limitations.</p>
       </section>
 
       <section id="headers" class="doc-section">
-        <h2>Headers & Sections</h2>
-        <h3>General header</h3>
-        <p>[Explain the purpose of the default section.]</p>
-        <h3>Specialized headers</h3>
-        <p>[Explain how narrower categories are organized.]</p>
+        <h2>Headers & Breaks</h2>
+        <h3>Breaks</h3>
+        <p>Each preference section should be sandwiched by two 38-character lines of the '=' key, and 
+        two '-' key. These breaks denote the beginning and end of a department's specific preferences.
+        This helps guide the eye from section to section with differences in the length of text. 
+        Think of them as the red-light-green-light-go indicators of our eyes.</p>
+
+        <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>|======================================|
+          [Department Text]
+          |======================================|</code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
         <div class="callout">
           <strong>Rule</strong>
-          <p>[Insert the key placement rule.]</p>
+          <p>There should be no space ('Enter' key) before or after the breaks.</p>
+        </div>
+        <h3>General Headers</h3>
+        <p>Headers are all-caps of text that are the beginning of a subsection of 
+        preferences for a department. All preference sections should have a minimum of one-header
+        that is the general header that denotres the default standards of that department.</p>
+
+        <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>|======================================|
+          GENERAL FIXED
+          |======================================|</code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
+        <p>Each department can have multiple headers, each of which is a different subsection
+        that is scheduled to this department. There should be one space (one 'Enter' key) after each
+        subsection</p>
+        
+        <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>
+|======================================|
+GENERAL FIXED
+   - PC:
+   - PC Shape: Standard
+   - Occlusion: 
+   - Opposing adjustments: 
+   - Margins: 
+   - Pontic:  
+   - Adj Undercut:
+   - Die Undercut:
+
+FIXED IMPLANT 
+   - Retention Type: 
+   - Abutment:
+   - Convert to ASC: 
+   - Convert to Custom: 
+   - Blanching: 
+
+PFM + FULL CAST 
+   - Metal Lingual Needed:
+   - Metal Occlusal Needed:   
+   - PFM alloy: 
+   - Full cast alloy:
+|======================================|</code></pre>
+          <button class="copy-button" type="button">Copy example</button>
         </div>
       </section>
 
       <section id="addendums" class="doc-section">
         <h2>Addendums</h2>
-        <p>[Explain indentation and nested preference conventions.]</p>
+        <p>Under each header, each new line should be preceded by an indented
+        addendum. </p>
         <div class="example">
           <span class="example-label">FORMATTING EXAMPLE</span>
-          <pre><code>[Parent preference]
-   - [Sub-preference]</code></pre>
+          <pre><code>
+          ***-*[insert preference text here]
+             - [insert preference text here]
+          </code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
+        <p>The asterisks ('*') represent the spaces that are used to create the addendum. 
+        3 spaces ('Spacebar'), hyphen ('-'), 1 space ('Spacebar'), then your preference text. </p>
+
+        <p>Each addendum represents a single sentence for a preference. These lines can be formatted
+        to display specifc defaults for a set criteria for a product, or a general preference.</p>
+
+        <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>
+|======================================|
+FULL DENTURE 
+   - Denture type: Digital
+   - Stippling: Yes
+   - Festooning: Yes
+   - Set-Up: Ideal
+   - Teeth type: Economy
+   - Avoid sharp edges on incisals
+|======================================|
+          </code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
+      <p>Each department has a standard template to utilize that showcases this format. You can find
+        these templates at the end of this guide for each department. Defaults for doctors should be 
+      formated as <code>[Criteria: selected preference]</code></p>
+
+      <p>You might find it necessary to add additional criteria, details, or conditional 
+      specifications regarding a preference. In this case, you can add a sub-addendum under the parent.</p>
+      
+              <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>
+|======================================|
+FULL DENTURE 
+   - Denture type: Digital
+       - Dr will always send 2 scans, utilize the better one
+   - Stippling: Yes
+   - Festooning: Yes
+   - Set-Up: Ideal
+   - Teeth type: Economy
+   - Avoid sharp edges on incisals
+|======================================|
+          </code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
+      <p>The formatting of this sub indented line is as follows: </p>
+        <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>
+          ******-*[insert preference text here]
+                - [insert preference text here]
+          </code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
+      <p>Sometimes, there might be multiple doctors tied to a single account. 
+      Addendums are useful in clarifying what their own default preferences are for
+      certain products.</p>
+
+                    <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>
+|======================================|
+FULL DENTURE 
+   - Denture type: Digital
+       - Dr will always send 2 scans, utilize the better one
+   - Stippling: Yes
+   - Festooning: Yes
+   - Set-Up: Ideal
+   - Teeth type: Economy
+   - Avoid sharp edges on incisals
+|======================================|
+          </code></pre>
           <button class="copy-button" type="button">Copy example</button>
         </div>
       </section>
