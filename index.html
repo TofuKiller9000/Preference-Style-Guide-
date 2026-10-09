@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A technical style guide for consistent, readable preference documentation.">
+  <title>Preference Style Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#overview">Preference Standards</a>
+    <label class="search">
+      <span class="sr-only">Search documentation</span>
+      <input id="searchInput" type="search"
+        placeholder="Search documentation..." autocomplete="off">
+    </label>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <p class="nav-heading">DOCUMENTATION</p>
+      <nav aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#system-basics">System Basics</a>
+        <a href="#formatting">Formatting Rules</a>
+        <a href="#headers">Headers & Sections</a>
+        <a href="#addendums">Addendums</a>
+        <a href="#line-length">Line Length</a>
+        <a href="#writing-standards">Writing Standards</a>
+        <a href="#departments">Department Reference</a>
+        <a href="#final-remarks">Final Remarks</a>
+      </nav>
+    </aside>
+
+    <main id="content">
+      <section id="overview" class="doc-section">
+        <p class="eyebrow">DOCUMENTATION / STYLE GUIDE</p>
+        <h1>Preference Style Guide</h1>
+        <p class="lead">
+          A consistent framework for organizing account-specific
+          requirements into clear, readable, actionable instructions.
+        </p>
+
+        <div class="callout">
+          <strong>Core principle</strong>
+          <p>
+            Every preference should be concise, correctly categorized,
+            and easy for its intended reader to locate.
+          </p>
+        </div>
+
+        <h2>Purpose</h2>
+        <p>[Describe the purpose and scope of the standard.]</p>
+
+        <h2>Goals</h2>
+        <ul>
+          <li>Improve consistency and readability.</li>
+          <li>Reduce duplicated and contradictory instructions.</li>
+          <li>Make important information easier to locate.</li>
+          <li>[Add any additional goals.]</li>
+        </ul>
+      </section>
+
+      <section id="system-basics" class="doc-section">
+        <h2>System Basics</h2>
+        <h3>What are preferences?</h3>
+        <p>[Explain the role of preferences using generalized examples.]</p>
+        <h3>How are preferences applied?</h3>
+        <p>[Describe the confirmed behavior of the underlying system.]</p>
+        <div class="example">
+          <span class="example-label">EXAMPLE</span>
+          <pre><code>[Insert a sanitized example.]</code></pre>
+        </div>
+      </section>
+
+      <section id="formatting" class="doc-section">
+        <h2>Formatting Rules</h2>
+        <h3>Section dividers</h3>
+        <p>[Document divider length, placement, and spacing.]</p>
+        <h3>Spacing and readability</h3>
+        <p>[Document line spacing and formatting constraints.]</p>
+      </section>
+
+      <section id="headers" class="doc-section">
+        <h2>Headers & Sections</h2>
+        <h3>General header</h3>
+        <p>[Explain the purpose of the default section.]</p>
+        <h3>Specialized headers</h3>
+        <p>[Explain how narrower categories are organized.]</p>
+        <div class="callout">
+          <strong>Rule</strong>
+          <p>[Insert the key placement rule.]</p>
+        </div>
+      </section>
+
+      <section id="addendums" class="doc-section">
+        <h2>Addendums</h2>
+        <p>[Explain indentation and nested preference conventions.]</p>
+        <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>[Parent preference]
+   - [Sub-preference]</code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
+      </section>
+
+      <section id="line-length" class="doc-section">
+        <h2>Line Length</h2>
+        <p>[Explain the recommended line length and its rationale.]</p>
+        <div class="comparison">
+          <div>
+            <h3>Before</h3>
+            <p>[Insert a sanitized, overly verbose example.]</p>
+          </div>
+          <div>
+            <h3>After</h3>
+            <p>[Insert a concise equivalent that preserves the meaning.]</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing-standards" class="doc-section">
+        <h2>Writing Standards</h2>
+        <h3>Recommended practices</h3>
+        <ul>
+          <li>Use concise, unambiguous language.</li>
+          <li>Keep related instructions together.</li>
+          <li>Review existing instructions before making changes.</li>
+        </ul>
+        <h3>Patterns to avoid</h3>
+        <ul>
+          <li>Duplicated or contradictory instructions.</li>
+          <li>Unnecessary commentary.</li>
+          <li>[Add other documented restrictions.]</li>
+        </ul>
+      </section>
+
+      <section id="departments" class="doc-section">
+        <h2>Department Reference</h2>
+        <p>
+          [Explain how to identify the appropriate category.
+          Verify all entries before publishing.]
+        </p>
+        <label class="table-search">
+          Filter categories
+          <input id="departmentSearch" type="search"
+            placeholder="Search this table...">
+        </label>
+        <div class="table-wrapper">
+          <table id="departmentTable">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Identifier</th>
+                <th>General purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>[Category name]</td>
+                <td>[Identifier]</td>
+                <td>[Verified description]</td>
+              </tr>
+              <tr>
+                <td>[Category name]</td>
+                <td>[Identifier]</td>
+                <td>[Verified description]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="final-remarks" class="doc-section">
+        <h2>Final Remarks</h2>
+        <p>[Summarize the importance of clear communication and maintaining the standard.]</p>
+      </section>
+
+      <footer>
+        <p>Preference Style Guide · Portfolio documentation project</p>
+        <p><a href="#overview">Back to top ↑</a></p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
