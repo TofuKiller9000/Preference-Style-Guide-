@@ -28,7 +28,8 @@
         <a href="#headers">Headers & Sections</a>
         <a href="#addendums">Addendums</a>
         <a href="#line-length">Line Length</a>
-        <a href="#writing-standards">Writing Standards</a>
+        <a href="#Does-and-donts">Do's and Dont's</a>
+        <a href="#Dates">Dates</a>
         <a href="#departments">Department Reference</a>
         <a href="#final-remarks">Final Remarks</a>
       </nav>
@@ -80,12 +81,6 @@
         <p>Each department can be assigned a specific set of preferences. For example, 
         if Dr. Smith wants all denture cases to include a name, you can include that preference in the
         Denture Department Preference tab. When a denture case is scheduled, this preference will be printed.</p>
-        <div class="example">
-          <span class="example-label">EXAMPLE</span>
-          <pre><code>
-Dr. Smith wants an all-acrylic partial for her patient. Most of the steps will be scheduled for the Partial Splint (PARTSPLINT) Department. 
-Though 1 step, 70010-Select Teeth, is from the Denture Department (DENTURES) so all preferences for the Denture Department will also be printed. </code></pre>
-        </div>
         <p>There are some departments whose preferences will always be include such as: </p>
         <ul>
           <li>Data Entry</li>
@@ -268,31 +263,69 @@ FULL DENTURE
 
       <section id="line-length" class="doc-section">
         <h2>Line Length</h2>
-        <p>[Explain the recommended line length and its rationale.]</p>
+        <p>Preferences should ideally be made up of short, concise sentences/shorthand. The optimal line length is 50-60 characters per line, including spaces.
+        Avoid long-winded writing, multiple sentences, or run-on sentences. A technician should be able to quickly look over a preference sheet and be able to pick up
+        the key details for their department withe ase. </p>
+
+        <p>Below is an example of a real preference that was attached to an account and how easily we can reduce its length and make it more readable.</p>
         <div class="comparison">
           <div>
             <h3>Before</h3>
-            <p>[Insert a sanitized, overly verbose example.]</p>
+            <p>
+              - make sure bases on dentures and acrylic partials are uniform thickness and not too thick and bulky
+              - IMPLANT preferences to always default to angled screw channel when the access hole is in an esthetic area or creates 
+              a thin area of porcelain. Also if the angled screw channel abutment is going to be too short for 
+              adequate retention when there is large restorative space (i.e. if the tooth is going to be very long.) then
+              always go to custom abutment but screw-mentable</p>
           </div>
           <div>
             <h3>After</h3>
-            <p>[Insert a concise equivalent that preserves the meaning.]</p>
+            <p>   - Denture & partials bases should be uniform thickness
+                  - Swap to ASC: ok to swap
+                     - If ASC abut is short for retnetion, ok to go to custom SR
+            </p>
           </div>
         </div>
+        <p>These shortened preferences provide the same information, but with fewer words. Make note that some words are shortened, or unique
+        symbols are utilized to save characters. Every little bit counts in helping a technician parse through a large chunk of information.</p>
       </section>
 
-      <section id="writing-standards" class="doc-section">
-        <h2>Writing Standards</h2>
+      <section id="Dates" class="doc-section">
+        <h2>Dates</h2>
+        <h3>How to use Dates</h3>
+        <p>When adding a new preference or changing an existing one, consider adding the date of when it was adjusted/made. 
+        This is useful for technicians to know if a preference is new or if has changed recently.</p>
+          <div class="example">
+          <span class="example-label">FORMATTING EXAMPLE</span>
+          <pre><code>
+                - Apply 10% discount on all removeables (10/26)
+                - Dr does not want screws included in case (5/24)
+          </code></pre>
+          <button class="copy-button" type="button">Copy example</button>
+        </div>
+      <p>Dates do not have to be added for all preferences. They should only be added if it is important in the context of the preference in question.
+      ie. A suddent change in a Dr's preference, a temporary preference, or a time-specific preference.</p>
+        <div class="callout">
+          <strong>Rule</strong>
+          <p>Dates should be formatted with the month then year (MM/YY)</p>
+        </div>
+      </section>
+      <section id="dos-and-donts" class="doc-section">
+        <h2>Do's and Dont's</h2>
         <h3>Recommended practices</h3>
         <ul>
-          <li>Use concise, unambiguous language.</li>
-          <li>Keep related instructions together.</li>
-          <li>Review existing instructions before making changes.</li>
+          <li>Use concise, unambiguous language</li>
+          <li>Keep related instructions together</li>
+          <li>Review existing instructions before making changes</li>
         </ul>
         <h3>Patterns to avoid</h3>
         <ul>
-          <li>Duplicated or contradictory instructions.</li>
-          <li>Unnecessary commentary.</li>
+          <li>No all caps outside of headers</li>
+          <li>No exclamation marks ('!')</li>
+          <li>Do not repeat information in muktiple departments</li>
+          <li>Do not directly copy-paste something from a doctor's email</li>
+          <li>Do not make remarks about Dr's mood, demeanor, or thoughts with ROE</li>
+          <li>Contradicting a previously written preference</li>
           <li>[Add other documented restrictions.]</li>
         </ul>
       </section>
@@ -300,8 +333,10 @@ FULL DENTURE
       <section id="departments" class="doc-section">
         <h2>Department Reference</h2>
         <p>
-          [Explain how to identify the appropriate category.
-          Verify all entries before publishing.]
+          The follow chart showcases the general rule of thumb of which department to use for a specific product or step preference. It is important to not assume
+          that just because a department is named after a product or step that you should put a similar preference in that department. There are multiple duplicates
+          of the same department that are no longer used, and thus, preferences put in them will not appear. Follow this chart below for the greatest success
+          in having a doctor's preference displayed correctly. 
         </p>
         <label class="table-search">
           Filter categories
@@ -312,22 +347,84 @@ FULL DENTURE
           <table id="departmentTable">
             <thead>
               <tr>
-                <th>Category</th>
-                <th>Identifier</th>
-                <th>General purpose</th>
+                <th>Department</th>
+                <th>Department ID</th>
+                <th>Preference Categories</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>[Category name]</td>
-                <td>[Identifier]</td>
-                <td>[Verified description]</td>
+                <td>Anterior</td>
+                <td>ANTERIOR</td>
+                <td>General fixed (occlusion, proximal contact, margins); general implant (abutment type, retention, margins, blanching); PFM (alloy type, lingual & occlusal metal);
+                carve/polish/stain steps; pink on gingival; reduction copings</td>
               </tr>
               <tr>
-                <td>[Category name]</td>
-                <td>[Identifier]</td>
-                <td>[Verified description]</td>
+                <td>Posterior</td>
+                <td>PORCPFM</td>
+                <td>General fixed (occlusion, proximal contact, margins); general implant (abutment type, retention, margins, blanching); PFM (alloy type, lingual & occlusal metal);
+                carve/polish/stain steps; pink on gingival; reduction copings</td>
               </tr>
+              <tr>
+                <td>Cad Anterior</td>
+                <td>CADANT</td>
+                <td>CAD design for fixed; implant design; parts (OEM vs non-OEM, drivers); model-less or w/ models; diagnostic matrixes</td>
+              </tr>
+              <tr>
+                <td>Cad Posterior</td>
+                <td>CADPOST</td>
+                <td>CAD design for fixed; implant design; parts (OEM vs non-OEM, drivers); model-less or w/ models; diagnostic matrixes</td>
+              </tr>
+              <tr>
+                <td>Data Entry</td>
+                <td>DATAENTRY</td>
+                <td>Shipping; routes; addresses; scheduling products; photo approvals; discounts; blueprint design; automated design</td>
+              </tr>
+              <tr>
+                <td>Denture Department</td>
+                <td>DENTURES</td>
+                <td>Design specifications for all dentures; finish & polish steps; biteblocks; custom trays; teeth selection; partial setups; resets</td>
+              </tr>
+              <tr>
+                <td>Digital Denture Department</td>
+                <td>DIGITAL</td>
+                <td>Stabiliteeth protocols</td>
+              </tr>
+              <tr>
+                <td>Partial Splint</td>
+                <td>PARTSPLINT</td>
+                <td>Minicomforts; splints (clearguard/comfort hs); laser work; essix retainers; wrought wires; implant stents/guide sleeves; fabricate splints w/ models; 
+                partial type (acrylic, tcs, digital)</td>
+              </tr>
+              <tr>
+                <td>Partial Flexible</td>
+                <td>PARFLEXI</td>
+                <td>TCS/thermoplastic</td>
+              </tr>
+              <tr>
+                <td>Full Arch Design</td>
+                <td>FULL ARCH</td>
+                <td>For CAD designs of full arch products; also include preferences for some Guided Smile products</td>
+              </tr>
+              <tr>
+                <td>CT Planning</td>
+                <td>CTPLANNING</td>
+                <td>Contact or pre-design info for Guided Smile cases</td>
+              </tr>
+              <tr>
+                <td>CT Production</td>
+                <td>CT PROD</td>
+                <td>Specific notes for designers of Guided Smile cases</td>
+              </tr>
+              <tr>
+                <td>Team QC Quality Control</td>
+                <td>TEAM QC</td>
+                <td>Packing; models; extra things to check; frequent problems to look for</td>
+              </tr>
+              <tr>
+                <td>Technical Reps</td>
+                <td>TECHREP</td>
+                <td>Calling steps; preferred communication; who to speak with; photo approvals</td>
             </tbody>
           </table>
         </div>
@@ -335,7 +432,9 @@ FULL DENTURE
 
       <section id="final-remarks" class="doc-section">
         <h2>Final Remarks</h2>
-        <p>[Summarize the importance of clear communication and maintaining the standard.]</p>
+        <p>One of the most important aspects of our Core Values is Clear Communication. This document hopes to provide help in 
+        assisting in that area, but it is only as useful as you make it. Referencing this guide when adding, creating, or removing preferences 
+        will help not only you, but everyone at ROE Dental Lab. We're counting on you to know that here at ROE, our preference is excellent service.</p>
       </section>
 
       <footer>
