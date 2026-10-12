@@ -61,21 +61,20 @@
 
         <h2>Goals</h2>
         <ul>
-          <li>Improve consistency and readability.</li>
-          <li>Reduce duplicated and contradictory instructions.</li>
-          <li>Make important information easier to locate.</li>
+          <li>Improve consistency and readability</li>
+          <li>Reduce duplicated and contradictory instructions</li>
+          <li>Make important information easier to locate</li>
         </ul>
       </section>
 
       <section id="system-basics" class="doc-section">
         <h2>System Basics</h2>
         <h3>What are preferences?</h3>
-        <p>Preferences are a set of rules and guidelines expressed by a Doctor for how we can best serve them
-        , and the products we make. Each Doctor's account has their own unique set of preferences that are printed 
+        <p>Preferences are a set of rules and guidelines expressed by a doctor for how we can best serve them, and the products we make. Each doctor's account has their own unique set of preferences that are printed 
         on a work ticket whenever a new case is generated.</p>
         <ul>
-          <li>Even if an account has multiple doctors, only one preference page will be generated.</li>
-          <li>Preferences are shared across an account for all cases.</li>
+          <li>Even if an account has multiple doctors, only one preference page will be generated</li>
+          <li>Preferences are shared across an account for all cases</li>
         </ul>
         <h3>How are preferences applied?</h3>
         <p>Each department can be assigned a specific set of preferences. For example, if Dr. Smith wants all denture cases to include a name, you can include that preference in the
@@ -86,7 +85,7 @@
           <li>Team QC Quality Control</li>
           <li>General Preferences</li>
         </ul>
-        <p>To avoid repeating information, the preference system limit the Departments that can 
+        <p>To avoid repeating information, the preference system limit the departments that can 
         be given preferences. </p>
       </section>
 
@@ -108,7 +107,7 @@
         <h2>Headers & Breaks</h2>
         <h3>Breaks</h3>
         <p>Each preference section should be sandwiched by two 38-character lines of the '=' key, and 
-        two '-' key. These breaks denote the beginning and end of a department's specific preferences.
+        two '|' key. These breaks denote the beginning and end of a department's specific preferences.
         This helps guide the eye from section to section with differences in the length of text. 
         Think of them as the red-light-green-light-go indicators of our eyes.</p>
 
@@ -147,27 +146,10 @@ GENERAL FIXED
           <pre><code>
 |======================================|
 GENERAL FIXED
-   - PC:
-   - PC Shape: Standard
-   - Occlusion: 
-   - Opposing adjustments: 
-   - Margins: 
-   - Pontic:  
-   - Adj Undercut:
-   - Die Undercut:
 
 FIXED IMPLANT 
-   - Retention Type: 
-   - Abutment:
-   - Convert to ASC: 
-   - Convert to Custom: 
-   - Blanching: 
 
 PFM + FULL CAST 
-   - Metal Lingual Needed:
-   - Metal Occlusal Needed:   
-   - PFM alloy: 
-   - Full cast alloy:
 |======================================|</code></pre>
           <button class="copy-button" type="button">Copy example</button>
         </div>
@@ -246,14 +228,11 @@ FULL DENTURE
           <span class="example-label">FORMATTING EXAMPLE</span>
           <pre><code>
 |======================================|
-FULL DENTURE 
-   - Denture type: Digital
-       - Dr will always send 2 scans, utilize the better one
-   - Stippling: Yes
-   - Festooning: Yes
-   - Set-Up: Ideal
-   - Teeth type: Economy
-   - Avoid sharp edges on incisals
+FULL DENTURE
+- Denture type:
+   - Dr Smith: digital
+   - Dr Jones: Ivocap
+      - Dr will want digital try-ins for setups.
 |======================================|
           </code></pre>
           <button class="copy-button" type="button">Copy example</button>
@@ -264,7 +243,7 @@ FULL DENTURE
         <h2>Line Length</h2>
         <p>Preferences should ideally be made up of short, concise sentences/shorthand. The optimal line length is 50-60 characters per line, including spaces.
         Avoid long-winded writing, multiple sentences, or run-on sentences. A technician should be able to quickly look over a preference sheet and be able to pick up
-        the key details for their department withe ase. </p>
+        the key details for their department with ease. </p>
 
         <p>Below is an example of a real preference that was attached to an account and how easily we can reduce its length and make it more readable.</p>
         <div class="comparison">
@@ -305,7 +284,7 @@ FULL DENTURE
           <button class="copy-button" type="button">Copy example</button>
         </div>
       <p>Dates do not have to be added for all preferences. They should only be added if it is important in the context of the preference in question.
-      ie. A suddent change in a Dr's preference, a temporary preference, or a time-specific preference.</p>
+      ie. A suddent change in a doctor's preference, a temporary preference, or a time-specific preference.</p>
         <div class="callout">
           <strong>Rule</strong>
           <p>Dates should be formatted with the month then year (MM/YY)</p>
@@ -326,9 +305,8 @@ FULL DENTURE
           <li>No exclamation marks ('!')</li>
           <li>Do not repeat information in muktiple departments</li>
           <li>Do not directly copy-paste something from a doctor's email</li>
-          <li>Do not make remarks about Dr's mood, demeanor, or thoughts with ROE</li>
+          <li>Do not make remarks about Doctor's mood, demeanor, or thoughts with ROE</li>
           <li>Contradicting a previously written preference</li>
-          <li>[Add other documented restrictions.]</li>
         </ul>
       </section>
 
@@ -427,6 +405,231 @@ FULL DENTURE
                 <td>Technical Reps</td>
                 <td>TECHREP</td>
                 <td>Calling steps; preferred communication; who to speak with; photo approvals</td>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="department-templates" class = "doc section">
+        <h2>Department Templates</h2>
+        <p>
+        This section provides the default preference templates for each department. Not all accounts have preferences for each line item, so make sure to remove
+        unnecessary empty lines if the doctor does not provide anything. 
+        </p>
+        <label class="table-search">
+          Filter categories
+          <input id="departmentSearch" type="search"
+            placeholder="Search this table...">
+        </label>
+        <div class="table-wrapper">
+          <table id="departmentTable">
+            <thead>
+              <tr>
+                <th>Department</th>
+                <th>Department ID</th>
+                <th>Template</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Anterior / Posterior</td>
+                <td>ANTERIOR / PORCPFM</td>
+                <td><code>
+|======================================|
+GENERAL FIXED
+   - PC:
+   - PC Shape: Standard
+   - Occlusion: 
+   - Opposing adjustments: 
+   - Margins: 
+   - Pontic:  
+   - Adj Undercut:
+   - Die Undercut:
+
+FIXED IMPLANT 
+   - Retention Type: 
+   - Abutment:
+   - Convert to ASC: 
+   - Convert to Custom: 
+   - Blanching: 
+
+PFM + FULL CAST 
+   - Metal Lingual Needed:
+   - Metal Occlusal Needed:   
+   - PFM alloy: 
+   - Full cast alloy:
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Cad Anterior / Cad Posterior</td>
+                <td>CADANT / CADPOST</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cad Posterior</td>
+                <td>CADPOST</td>
+                <td><code>
+|======================================|
+GENERAL CAD FIXED
+   - Fabricate Model(s): 
+
+GENERAL CAD IMPLANT
+   - Owned Drivers: 
+   - Parts: 
+
+DIAGNOSTIC DESIGNS
+   - Diagnostic: 
+   - Diagnostic Model Matrix: 
+|======================================|
+               </code> </td>
+              </tr>
+              <tr>
+                <td>Data Entry</td>
+                <td>DATAENTRY</td>
+                <td><code>
+|======================================|
+GENERAL DATA ENTRY 
+   - Route: 
+   - Address: 
+   - Shipping $$: 
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Denture Department</td>
+                <td>DENTURES</td>
+                <td><code>
+|======================================|
+FULL DENTURE 
+   - Denture type: 
+   - Stippling:
+   - Festooning: 
+   - Set-Up 
+   - Teeth type:
+
+OVERDENTURE/FIXED DENTURE
+   - Cure in housings: 
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Digital Denture Department</td>
+                <td>DIGITAL</td>
+                <td><code>
+|======================================|
+DIGITAL DENTURE 
+   - Stabiliteeth Dr
+   - [put stabiliteeth protocols here]
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Partial Splint</td>
+                <td>PARTSPLINT</td>
+                <td><code>
+|======================================|
+SPLINTS / GUARDS 
+   - Arch: 
+   - Material: 
+   - Fabricate Model(s):
+
+FLIPPERS / PARTIALS
+   - Arch: 
+   - Material: 
+   - Design specs:
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Partial Flexible</td>
+                <td>PARFLEXI</td>
+                <td><code>
+|======================================|
+PARTIAL FLEXIBLE
+   - Design (material, clasps, etc.): 
+   - Acrylic shade match: 
+   - Base thickness:
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Partial Frames</td>
+                <td>PARFRAME</td>
+                <td><code>
+|======================================|
+PARTIAL FRAMES 
+   - Design (material, clasps, etc.):
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Preparatory</td>
+                <td>PREP</td>
+                <td><code>
+|======================================|
+GENERAL PREP
+   - Mounting: 
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Full Arch Design</td>
+                <td>FULL ARCH</td>
+                <td><code>
+|======================================|
+FULL ARCH
+   - Use OEM Sleeves: 
+   - Conversion: 
+   - Sleeveless Guides: 
+   - Irrigation Ports: 
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>CT Planning</td>
+                <td>CTPLANNING</td>
+                <td><code>
+|======================================|
+CT PLANNING
+   - Email: 
+   - Preferred Designer: 
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>CT Production</td>
+                <td>CT PROD</td>
+                <td>
+|======================================|
+CT PRODUCTION
+   - Parts: 
+|======================================|
+                </td>
+              </tr>
+              <tr>
+                <td>Team QC Quality Control</td>
+                <td>TEAM QC</td>
+                <td><code>
+|======================================|
+GENERAL QC
+   - Red Dr: [Insert TSS's name] QC only
+   - [put notes about things specific to QC]
+   - [do not repeat information]
+|======================================|
+                </code></td>
+              </tr>
+              <tr>
+                <td>Technical Reps</td>
+                <td>TECHREP</td>
+                <td>
+|======================================|
+GENERAL TSS/CSS
+   - Dr prefers calls to office over email 
+   - Only X to COMT
+|======================================|
+                </td>
+            </tbody>
             </tbody>
           </table>
         </div>
