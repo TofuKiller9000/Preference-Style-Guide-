@@ -28,5 +28,5 @@ static web server while developing.
 ## Project Notes
 
 This is a portfolio presentation of documentation and
-system-design principles. Examples must be sanitized and
-approved for publication before deployment.
+system-design principles. This was utilized and deployed at ROE Dental Laboratory
+with great success. The lab saw a 12% decrease in lab errors over a 3 month period. 
